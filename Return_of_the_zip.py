@@ -5,11 +5,13 @@ def zip_lists(list_one,list_two,final_list = []):
         # print(list_one)
         final_list.append(list_one[0])
         list_one.pop(0)
+        print(list_one)
         return zip_lists(list_two,list_one,final_list)
     if list_two:
         # print(list_two)
         final_list.append(list_two[0])
         list_two.pop(0)
+        print(list_two)
         return zip_lists(list_one,list_two,final_list)
     return final_list
     

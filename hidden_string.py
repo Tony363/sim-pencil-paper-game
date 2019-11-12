@@ -14,11 +14,11 @@ def replace_hidden_message(encrypted_message, hidden_message, new_hidden_message
     """
     
     encrypted_list = list(encrypted_message)
-    print(encrypted_list)
+    # print(encrypted_list)
     hidden_list = list(hidden_message)
-    print(hidden_list)
+    # print(hidden_list)
     new_hidden_list = list(new_hidden_message)
-    print(new_hidden_list)
+    # print(new_hidden_list)
 
     if len(encrypted_message) >= 1 or len(hidden_message) >= 1 or len(new_hidden_message) >= 1:
         
@@ -32,7 +32,7 @@ def replace_hidden_message(encrypted_message, hidden_message, new_hidden_message
 
         elif encrypted_message[0] == hidden_message[0]:
             replaced_message.append(new_hidden_message[0])
-            print(replaced_message)
+            # print(replaced_message)
             return replace_hidden_message(encrypted_message[1:],hidden_message[1:], new_hidden_message[1:], replaced_message)
     else:
         # print(''.join(replaced_message))

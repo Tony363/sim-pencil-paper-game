@@ -10,11 +10,11 @@ import random
 # points = random.sample([range(1,7),range(1,7)],3)
 # print(points)
 #losing_condtion= [[x,y],[y,z],[z,x]]
-losing_condition = {
-    {[x,y] for x in range(1,7) for y in range(1,7)},
+losing_condition = [
+    [[x,y] for x in range(1,7) for y in range(1,7)],
     [[y,z] for y in range(1,7) for z in range(1,7)],
     [[z,x] for z in range(1,7) for x in range(1,7)]
-}
+]
 print(losing_condition)
 
 def choice_character(*args):
